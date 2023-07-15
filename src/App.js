@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import ToTop from "./Components/Elements/ToTop";
-// import Footer from "./Components/Footer/Footer";
 import Head from "./Components/Head/Head";
 import Slide from "./Components/Slide/Slide";
 import lightHome from "./Components/Images/sceneOne.svg";
