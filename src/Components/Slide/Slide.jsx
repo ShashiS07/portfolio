@@ -175,7 +175,7 @@ function Slide({ currentTheme }) {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://drive.google.com/file/d/1nIw10thNi9Ry9ApRBmF-bwUzGvRLu2zs/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1KtKjapQ0CcBqdTq8LSIXjdS5EODAXNpr/view?usp=sharing"
                   download
                 >
                   <ResumeButton>
