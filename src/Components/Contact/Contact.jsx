@@ -268,7 +268,7 @@ function Contact({ currentTheme }) {
               </a>
             </div>
           </div>
-          <div title="Click here go to instagram profile">
+          {/* <div title="Click here go to instagram profile">
             <div>
               <a
                 target="_blank"
@@ -287,7 +287,7 @@ function Contact({ currentTheme }) {
                 <p>instagram.com/shashi__shekhar_singh/</p>
               </a>
             </div>
-          </div>
+          </div> */}
         </FindMeElseWhere>
       </ContactMain>
     </ContactWrapper>
