@@ -13,6 +13,7 @@ import urlShortnerImage from './ProjectImage/urlshortnerapp.png'
 import reactmealImage from './ProjectImage/reactmealapp.png'
 import productImage from './ProjectImage/productmanagement.jpg'
 import bookmanagement from './ProjectImage/bookmanagement.jpg'
+import chatappImage from './ProjectImage/chatapp.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,6 +74,34 @@ let projectArray = [
       "Fetching different API's for different work.",
       "Developed Video Player API so that user can watch trailers.",
       "Developed Searching and Sorting function."
+    ]
+  },
+  {
+    img: chatappImage,
+    title: "Chat-Application",
+    description: "A web application which provides functionality of chatting with friends and family.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB"
+    ],
+    repoLink: "https://github.com/ShashiS07/ChatApp-Mern",
+    demoLink: "https://chat-app-mern-pink.vercel.app/",
+    features: [
+      "Login/Register",
+      "Set AVATAR as a profile picture",
+      "Real Time chatting",
+      "Logout Fuctionality",
+    ],
+    responsibilities : [
+      "Developed Login/register feature with JSON web token.",
+      "Developed Backend Api's for integrating with frontend.",
+      "Developed Chat-Container for Chatting feature.",
+      "Established Socket.io connection for real-time chatting"
     ]
   },
   {
