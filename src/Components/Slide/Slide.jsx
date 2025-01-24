@@ -11,7 +11,7 @@ import envelopeBottom from "../Images/bottom.svg";
 
 //resume images
 
-import resumeFinal from "../Images/shashiresume.png";
+import resumeFinal from "../Images/shashiresume1.jpg";
 
 const SliderWrapper = styled.div`
   background-color: ${(props) => props.theme.body};

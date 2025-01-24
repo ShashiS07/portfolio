@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { MainHeadingWrapper} from "../Elements/Elements";
+import { MainHeadingWrapper } from "../Elements/Elements";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const ContactWrapper = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -115,8 +115,8 @@ const SendButton = styled.button`
 `;
 
 const intitialData = {
-  name: "",
-  email: "",
+  from_name: "",
+  email_id: "",
   message: "",
 };
 
@@ -127,18 +127,24 @@ function Contact({ currentTheme }) {
     setData({ ...data, [name]: value });
   };
 
-  const success = () => toast.success("Successfully Sent");
+  const success = () =>
+    toast.success("We have recieved your message. We'll Reach you soon");
   const failure = () => toast.error("Something went wrong");
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
+
+    const additionalParameters = {
+      to_name: "Shashi", // Static value
+    };
 
     emailjs
       .sendForm(
         "service_lry0v38",
         "template_wk27lvf",
         e.target,
-        "NWcOFBzUfR2SMd64J"
+        "NWcOFBzUfR2SMd64J",
+        additionalParameters
       )
       .then(
         (result) => {
@@ -152,7 +158,7 @@ function Contact({ currentTheme }) {
     setData(intitialData);
   };
 
-  const { name, email, message } = data;
+  const { from_name, email_id, message } = data;
 
   return (
     <ContactWrapper id="contact">
@@ -166,17 +172,17 @@ function Contact({ currentTheme }) {
             <div>
               <input
                 required
-                value={name}
-                name="name"
+                value={from_name}
+                name="from_name"
                 onChange={onChangeHandler}
                 placeholder="Name"
               />
             </div>
             <div>
               <input
-                value={email}
+                value={email_id}
                 type="email"
-                name="email"
+                name="email_id"
                 onChange={onChangeHandler}
                 placeholder="Email"
               />
@@ -295,4 +301,3 @@ function Contact({ currentTheme }) {
 }
 
 export default Contact;
-
