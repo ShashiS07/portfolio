@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Projects from "./Projects/Projects";
 import TimeLine from "./TimeLine/TimeLine";
-import Skill from './Skills/Skill'
+import Skill from "./Skills/Skill";
 
 import { ParagraphWrapper } from "../Elements/Elements";
 
@@ -12,6 +12,8 @@ import envelopeBottom from "../Images/bottom.svg";
 //resume images
 
 import resumeFinal from "../Images/shashiresume1.jpg";
+import resumeDownload from "../Images/shashiShekharSingh.pdf";
+import Experiance from "./Experiance/Experiance";
 
 const SliderWrapper = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -147,7 +149,10 @@ function Slide({ currentTheme }) {
     <SliderWrapper>
       <SlideMain>
         <SectionWrapper>
-          <Skill ></Skill>
+          <Skill></Skill>
+        </SectionWrapper>
+        <SectionWrapper>
+          <Experiance currentTheme={currentTheme}></Experiance>
         </SectionWrapper>
         <SectionWrapper>
           <TimeLine currentTheme={currentTheme}></TimeLine>
@@ -172,12 +177,7 @@ function Slide({ currentTheme }) {
                 <ParagraphWrapper>
                   <p>Need a copy?</p>
                 </ParagraphWrapper>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://drive.google.com/file/d/1KtKjapQ0CcBqdTq8LSIXjdS5EODAXNpr/view?usp=sharing"
-                  download
-                >
+                <a href={resumeDownload} download="Shashi_Resume.pdf">
                   <ResumeButton>
                     <span> Download</span>
                   </ResumeButton>

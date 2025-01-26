@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Navigation from "./Navigation";
 import Lottie from "react-lottie";
 import scroll from "../Animations/scrollDown.json";
-import shashi from "../Images/shashi.jpg";
-import {ParagraphWrapper } from "../Elements/Elements";
+import shashi from "../Images/shashiImage.jpeg";
+import { ParagraphWrapper } from "../Elements/Elements";
 
 const scrollOptions = {
   loop: true,
@@ -157,8 +157,8 @@ function Head({ currentTheme, themeToggler }) {
             </div>
             <ParagraphWrapper>
               <p>
-                Hi, its nice to meet you. I am a full stack web developer residing
-                in Lucknow, Uttar Pradesh, India.
+                Hi, its nice to meet you. I am a full stack web developer
+                residing in Lucknow, Uttar Pradesh, India.
               </p>
             </ParagraphWrapper>
             <ActionsDiv>

@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-
-import {
-  MainHeadingWrapper,
-  ParagraphWrapper,
- 
-} from "../Elements/Elements";
+import { MainHeadingWrapper, ParagraphWrapper } from "../Elements/Elements";
 
 const Wrapper = styled.div`
   padding: 50px 0;
@@ -74,7 +69,12 @@ function About() {
       <Content>
         <ParagraphWrapper justified={true}>
           <p>
-          A self-motivated, hard-working Full Stack Web Developer with problem-solving skills. A team player, eager to work with product-based organizations to enhance my skills. Care deeply about creating user-centric products.
+            A self-motivated, hard-working Full Stack Web Developer with 1.5
+            year of experience in MERN Stack development, possessing strong
+            problem-solving skills. A team player eager to work with growing
+            organizations to further enhance skills. Passionate about creating
+            user-centric products, and currently seeking a full-time role as a
+            MERN Stack Developer.
           </p>
         </ParagraphWrapper>
       </Content>
